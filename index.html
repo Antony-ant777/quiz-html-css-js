@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ</title>
+    <style>
+        body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}.opt{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+p{
+    border:0px solid black;
+    width:530px;
+    height:50px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+button{
+    height:50px;
+    width:50px;
+    background-color: rgb(176, 53, 107);
+    border :0px solid black;
+}
+.all{
+    width:600px;
+    background-color: rgb(221, 161, 187);
+    padding: 15px;
+}
+    </style>
+    
+</head>
+<body id="tot">
+    <div class="all">
+        <h1>In web design, what does CSS stand for?</h1>
+        <div class="options">
+            <div class="opt">
+                <button id="op1" onclick="wrng1()">A</button>
+                <p id="op11" onclick="wrng1()">Counter Strike Source</p>
+            </div>
+            <div class="opt">
+                <button id="op2" onclick="wrng2()">B</button>
+                <p id="op22" onclick="wrng2()">Corrective Style Sheet</p>
+            </div>
+            <div class="opt">
+                <button id="op3" onclick="wrng3()">C</button>
+                <p id="op33"onclick="wrng3()">Computer Style Sheet</p>
+            </div>
+            <div class="opt">
+                <button id="op4" onclick="ryt()">D</button>
+                <p id="op44"onclick="ryt()">Cascasde Style Sheet</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+     function ryt(){
+    document.getElementById('op4').style.backgroundColor="green";
+    document.getElementById('op44').style.backgroundColor="green";
+    document.getElementById('tot').style.backgroundColor="green";
+      }
+     function wrng1(){
+    document.getElementById('op1').style.backgroundColor="red";
+    document.getElementById('op11').style.backgroundColor="red";
+    document.getElementById('tot').style.backgroundColor="red";
+     }
+     function wrng2(){
+    document.getElementById('op2').style.backgroundColor="red";
+    document.getElementById('op22').style.backgroundColor="red";
+    document.getElementById('tot').style.backgroundColor="red";
+    }
+     function wrng3(){
+    document.getElementById('op3').style.backgroundColor="red";
+    document.getElementById('op33').style.backgroundColor="red";
+    document.getElementById('tot').style.backgroundColor="red";
+     }
+    </script>
+</body>
+</html>
